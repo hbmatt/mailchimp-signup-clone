@@ -284,7 +284,7 @@ body {
   height: 24px;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-image: url(/images/checkbox.png);
+  background-image: url(../images/checkbox.png);
   background-size: 24px 388px;
   background-position: 0 -26px;
   box-sizing: border-box;
@@ -331,6 +331,6 @@ footer a {
 
 .right-pane {
   width: clamp(200px, 30%, 650px);
-  background: no-repeat bottom 10% left 0 url(/images/art-hero-flowers.png), linear-gradient(to left, #ffe01b 85%, transparent 85%);
+  background: no-repeat bottom 10% left 0 url(../images/art-hero-flowers.png), linear-gradient(to left, #ffe01b 85%, transparent 85%);
   flex:none;
 }
