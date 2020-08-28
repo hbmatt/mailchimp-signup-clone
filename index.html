@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="shortcut icon" href="images/favicon.ico">
 </head>
@@ -32,11 +33,15 @@
                     <div class="field">
                       <label for="username">Username</label>
                       <input type="text" name="username">
+                      <p class="help">Choose a username that contains only letters and numbers, or use your email address. This is for login only.</p>
                     </div>
-                    <div class="field">
-                      <label for="password">Password</label>
+                    <div class="field last">
+                      <label for="password" class="float-left">Password</label>
+                      <div class="float-right">
+                        <label>Show</label>
+                      </div>                      
                       <input type="password" name="password">
-                      <div class="hint">
+                      <div class="password-requirements">
                         <div class="first-group">
                           <ul>
                             <li>One lowercase character</li>
@@ -53,9 +58,11 @@
                       </div>
                     </div>
                     <div class="submit">
-                      <button type="submit" value="Create Account">Sign Up</button>
+                      <button type="submit" value="Create Account" disabled="disabled">Sign Up</button>
                       <div class="marketing">
-                        <input type="checkbox" name="marketing" value="yes">
+                        <div class="checkbox">
+                          <input type="checkbox" name="marketing" value="yes">
+                        </div>                        
                         <label for="marketing">I don't want to receive emails about new Mailchimp products, best practices, or special offers.</label>
                       </div>
                     </div>
@@ -69,7 +76,7 @@
       </div>
 
       <footer class="rights">
-        ©2001–2020 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group. Cookie Preferences, Privacy, and Terms. 
+        <p>©2001–2020 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group.<BR> <a href="/">Cookie Preferences</a>, <a href="/">Privacy</a>, and <a href="/">Terms</a>.</p>
       </footer>
     </div>
 

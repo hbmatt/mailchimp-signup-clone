@@ -16,6 +16,16 @@ body {
   background:rgba(255,113,208,0.2)
  }
 
+ a {
+   color: #007c89;
+   cursor: pointer;
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: #004e56;
+ }
+
 .container {
   display: flex;
   min-height: 100vh;
@@ -26,6 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -56,6 +67,7 @@ body {
 .is-two-thirds {
   width: 66.666666666%;
   margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .signup {
@@ -79,10 +91,246 @@ body {
 }
 
 .signup-form {
+  margin-top: 18px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
 
+.field {
+  margin: 0;
+  position: relative;
+}
+
+.field.last {
+  margin-bottom: 36px;
+  box-sizing: border-box;
+}
+
+.field label {
+  font-weight: bold;
+  display: block;
+  max-width: 635px;
+  padding-bottom: 12px;
+  font-size: 1.6rem;
+  line-height: 18px;
+  box-sizing: border-box;
+}
+
+.field input {
+  min-height: 46px;
+  min-width: 50px;
+  max-width: 635px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  line-height: 20px;
+  padding: 0 15px;
+  display: inline-block;
+  margin-bottom: 24px;
+  vertical-align: middle;
+  border-radius: 2px;
+  border: 1px solid rgba(36,28,21,0.3);
+  transition: all 0.2s ease-in-out 0s;
+  position: relative;
+}
+
+.field input:focus {
+  border: 1px solid #007c89;
+  box-shadow: inset 0 0 0 1px #007c;
+}
+
+.field input:focus ~ .help {
+  opacity: 1;
+  max-height: 200px;
+}
+
+.field input ~ .help {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  transition: all .25s ease-in-out 0s;
+  overflow: hidden;
+}
+
+.field .help {
+  max-width: 635px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  line-height: 18px;
+  font-weight: bold;
+  position: relative;
+  color: rgba(36,28,21,0.65);
+  margin-top: -19px;
+  margin-bottom: 18px;
+}
+
+.field .float-left {
+  float: left;
+}
+
+.field .float-right {
+  float: right;
+}
+
+.field .float-right label {
+  color: #007c89;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.field .float-right label:hover {
+  color: #004e56;
+}
+
+.field .float-right label::before {
+  font-family: FontAwesome;
+  content: '\f06e';
+  font-size: 20px;
+  line-height: 16px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.password-requirements {
+  max-height: 200px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  overflow: auto
+}
+
+.password-requirements .first-group {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+}
+
+.password-requirements .second-group {
+  width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.password-requirements ul {
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.password-requirements li {
+  line-height: 2.4rem;
+}
+
+.password-requirements li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  border-radius: 8px;
+  background: #007c89;
+}
+
+.submit {
+  display: flex;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.submit button[disabled] {
+  pointer-events: none;
+  border: 1px solid #dedddc;
+  color: #bdbbb9;
+  background-color: transparent;
+}
+
+.submit button {
+  margin: 0 30px 0 0;
+  color: #fff;
+  background-color: #007c89;
+  padding: 0 42px;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1.6rem;
+  height: 48px;
+  line-height: 46px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.submit .marketing {
+  flex: 1;
+  display: flex;
+}
+
+.submit .marketing input {
+  display: block;
+  margin: 0;
+  opacity: .01;
+  width: 25px;
+  height: 25px;
+}
+
+.submit .marketing .checkbox {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url(/images/checkbox.png);
+  background-size: 24px 388px;
+  background-position: 0 -26px;
+  box-sizing: border-box;
+  display: table;
+}
+
+.submit .marketing label {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  flex: 1;
+  padding-bottom: 12px;
+}
+
+.signup .terms {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  max-width: 635px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.signup .terms a {
+  border-bottom: 1px solid #007c89;
+}
+
+footer.rights {
+  font-size: 1.2rem;
+  color: rgba(36,28,21,0.65);
+  line-height: 1.5;
+}
+
+footer p {
+  box-sizing: border-box;
+  max-width: 635px;
+  padding: 0 15px;
+  margin-bottom: 12px;
+}
+
+footer a {
+  color: rgba(36,28,21,0.65);
+  border-bottom: 1px solid rgba(36,28,21,0.65);
 }
 
 .right-pane {
   width: clamp(200px, 30%, 650px);
   background: no-repeat bottom 10% left 0 url(/images/art-hero-flowers.png), linear-gradient(to left, #ffe01b 85%, transparent 85%);
+  flex:none;
 }
