@@ -3,11 +3,79 @@
 
 <head>
   <title>Signup | Mailchimp</title>
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 <body>
+  <section class="container">
+    <div class="left-pane">
+      <img class="logo" src="images/mc-freddie-dark.svg" alt="Mailchimp logo" width="38px" height="38px">
 
+      <div class="main-container">
+        <div class="main-content">
+          <div class="signup-container">
+            <div class="signup-content">
+              <div class="is-two-thirds">
+                <div class="signup">
+                  <h1>Welcome to Mailchimp!</h1>
+                  <p>Find your people. Engage your customers. Build your brand. Do it all with Mailchimp’s Marketing
+                    Platform. Already have an account? <a href="https://login.mailchimp.com/">Log in</a></p>
+                  <form class="signup-form">
+                    <div class="field">
+                      <label for="email">Email</label>
+                      <input type="email" name="email">
+                    </div>
+                    <div class="field">
+                      <label for="username">Username</label>
+                      <input type="text" name="username">
+                    </div>
+                    <div class="field">
+                      <label for="password">Password</label>
+                      <input type="password" name="password">
+                      <div class="hint">
+                        <div class="first-group">
+                          <ul>
+                            <li>One lowercase character</li>
+                            <li>One uppercase character</li>
+                            <li>One number</li>
+                          </ul>
+                        </div>
+                        <div class="second-group">
+                          <ul>
+                            <li>One special character</li>
+                            <li>8 characters minimum</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="submit">
+                      <button type="submit" value="Create Account">Sign Up</button>
+                      <div class="marketing">
+                        <input type="checkbox" name="marketing" value="yes">
+                        <label for="marketing">I don't want to receive emails about new Mailchimp products, best practices, or special offers.</label>
+                      </div>
+                    </div>
+                    <p class="terms">By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href="http://mailchimp.com/legal/terms/" target="_blank">Terms of Use</a> and <a href="http://mailchimp.com/legal/privacy/" target="_blank">Privacy Policy</a>.</p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="rights">
+        ©2001–2020 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group. Cookie Preferences, Privacy, and Terms. 
+      </footer>
+    </div>
+
+    <div class="right-pane">
+    </div>
+  </section>
 </body>
 
 </html>

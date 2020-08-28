@@ -1,0 +1,88 @@
+html {
+  font-size: 10px;
+  line-height: 24px;
+}
+
+body {
+  color: #241c15;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+::selection, ::-moz-selection {
+  color:#241c15;
+  background:rgba(255,113,208,0.2)
+ }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  border-left: 8px solid #ffe01b
+}
+
+.left-pane {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.logo {
+  margin: 12px;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.signup-container {
+  margin: 48px auto;
+  padding: 36px;
+}
+
+.signup-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.is-two-thirds {
+  width: 66.666666666%;
+  margin: 0 auto;
+}
+
+.signup {
+  padding: 0 15px;
+}
+
+.signup h1 {
+  font-family: 'Cooper Light', Georgia, 'Times New Roman', Times, serif;
+  font-size: 4.4rem;
+  word-spacing: -0.2rem;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.signup p {
+  margin: 0 0 30px 0;
+  max-width: 635px;
+  font-size: 1.6rem;
+}
+
+.signup-form {
+
+}
+
+.right-pane {
+  width: clamp(200px, 30%, 650px);
+  background: no-repeat bottom 10% left 0 url(/images/art-hero-flowers.png), linear-gradient(to left, #ffe01b 85%, transparent 85%);
+}
