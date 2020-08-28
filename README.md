@@ -1,0 +1,1 @@
+This is a clone of Mailchimp's signup page for the HTML Forms project in The Odin Project's HTML and CSS Curriculum.
